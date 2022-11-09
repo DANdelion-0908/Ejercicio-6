@@ -8,6 +8,14 @@ package Model;
  *
  */
 public class IpodController implements IIpod_simulator {
+	
+	private boolean SwitchONOFF;
+	private boolean LockUnlockDevice;
+	private float volume;
+	private int prev;
+	private int next;
+	private int actualIndex;
+	
 
 	@Override
 	public boolean SwitchONOFF(boolean actual_state) {
